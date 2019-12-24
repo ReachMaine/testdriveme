@@ -1,0 +1,33 @@
+/*
+ Theme Name:  Divi Child Theme for testdrivemaine.com
+ Theme URI:    https://divilife.com
+ Description:  Child Theme for Divi
+ Author:       REACh Maine Marketing
+ Author URI:   https://www.reachmaine.com
+ Template:     Divi
+ Version:      1.0.0
+*/
+
+/*****Add any custom CSS below this line*****/
+
+@import "partials/colors";
+@import "partials/basics";
+
+
+
+#footer-bottom {
+  #footer-info {
+    .reach-customer-copyright {
+      float: left;
+    }
+    .reach-branding{
+      float: right;
+      a:before {
+        content: url('images/reach-favicon.png');
+        padding-right: 4px;
+      }
+    }
+  }
+}
+
+@import "partials/media"; // keep at bottom;

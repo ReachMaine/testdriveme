@@ -1,0 +1,45 @@
+/* **** media **** */
+// Divi breakpts
+// mobile menu shows at max-width:
+
+@media all and (max-width: 980px) { // nav menu,  woo & footer widgtes
+  .rmm-row-stackorder {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap; /* Safari 6.1+ */
+		flex-wrap: wrap;
+		.rmm-second-on-mobile {
+			-webkit-order: 2;
+			order: 2;
+		}
+		.rmm-first-on-mobile {
+			-webkit-order: 1;
+			order: 1;
+		}
+	}
+}
+@media only screen and (max-width: 960px) {
+
+}
+@media only all  and (max-width: 767px){ // mobile
+  // center footer widgets at mobile
+  #main-footer {
+    #footer-widgets {
+      .footer-widget {
+        .fwidget.et_pb_widget {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media only all  and (max-width: 767px) {
+
+}
+
+@media all and (max-width: 479px) {
+}
