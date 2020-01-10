@@ -21,3 +21,21 @@ if ( ! function_exists( 'et_get_footer_credits' ) ) {
   	return et_get_safe_localization( sprintf( $credits_format, $footer_credits, 'div' ) );
   }
 }
+/// blog functions
+add_action('et_before_post', 'reach_blog_top');
+function reach_blog_top() {
+  echo do_shortcode('[et_pb_section global_module="265"][/et_pb_section]'); // the hero image...
+  echo '<div class="tdm_sponser_header_wrap"><h1 class="tdm_sponsor">Sponsored by ';
+  the_category(" ");
+  echo '</h1></div>';
+}
+
+
+add_action('et_after_post', 'reach_blog_footer');
+function reach_blog_footer () {
+  echo do_shortcode('[et_pb_section global_module="295"][/et_pb_section]');
+  echo '<div class="tdm_sponser_footerr_wrap"><div class="tdm_sponsor_desc">';
+  $catID = get_the_category();
+  echo category_description( $catID[0] );
+  echo '</div></div>';
+}
