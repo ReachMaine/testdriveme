@@ -7,5 +7,6 @@ add_action( 'wp_enqueue_scripts', 'divi__child_theme_enqueue_styles' );
 
 //you can add custom functions below this line:
 //require_once(get_stylesheet_directory().'/custom/reach-CTAs.php');
+require_once(get_stylesheet_directory().'/custom/reach-functions.php');
 require_once(get_stylesheet_directory().'/custom/language.php');
 require_once(get_stylesheet_directory().'/custom/divi.php');
