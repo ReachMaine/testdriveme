@@ -21,6 +21,26 @@
       content: url("images/reach-favicon.png");
       padding-right: 4px; }
 
+.tdm_sponser_header_wrap {
+  background-color: #b90020;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .tdm_sponser_header_wrap .tdm_sponsor {
+    width: 80%;
+    margin: auto;
+    font-family: 'Public Sans',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #ffffff !important; }
+
+.tdm_sponser_footerr_wrap {
+  padding-top: 20px;
+  padding-bottom: 175px;
+  background-color: #f7f7f7; }
+
 #footer-bottom #footer-info .reach-customer-copyright {
   float: left; }
 #footer-bottom #footer-info .reach-branding {
