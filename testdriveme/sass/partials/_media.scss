@@ -1,7 +1,16 @@
 /* **** media **** */
 // Divi breakpts
 // mobile menu shows at max-width:
-
+@media all and (min-width: 981px) {
+  body.single-post {
+    #left-area {
+      padding-left: 0px;
+    }
+    article {
+      padding-left: 5.5%;
+    }
+  }
+}
 @media all and (max-width: 980px) { // nav menu,  woo & footer widgtes
   .rmm-row-stackorder {
 		display: -webkit-box;

@@ -1,0 +1,79 @@
+/* styling for blog posts, single blog module, etc.... */
+/* blog module + read more button */
+.et_pb_blog_grid {
+  article.et_pb_post {
+      .post-content {
+        .more-link {
+            background-color: $tdm-red;
+            display: inline-block !important;
+            color: #fff!important;
+            padding: 5px 15px;
+            margin-top: 15px;
+            text-transform: uppercase;
+            border: 1px solid $tdm-red;
+            font-weight: bold;
+        }
+
+        .more-link:hover {
+            background-color: #fff;
+            color: $tdm-red;
+        }
+    }
+
+  }
+}
+// single blog - all media
+body.single-post {
+  #main-content>.container {
+      padding-top: 0px;
+  }
+}
+// single blog at desktop
+@media all and (min-width: 981px) {
+  body.single-post {
+    #main-content>.container {
+        width: 100%;
+        max-width: initial;
+
+        #content-area {
+          #left-area {
+            article {
+              max-width: 920px;
+              padding-left: 5.5%;
+              padding-right: 5%;
+            }
+          }
+          #sidebar {
+            max-width: 230px;
+            float: right;
+            text-align: right;
+            padding-top: 50px;
+          }
+        }
+      }
+  }
+}
+
+//blog post
+.tdm_sponser_header_wrap {
+  background-color: $sponsored-by-header-bkg;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ .tdm_sponsor {
+   width: 80%;
+   margin: auto;
+   font-family: 'Public Sans',Helvetica,Arial,Lucida,sans-serif;
+   font-weight: 700;
+   text-transform: uppercase;
+   //font-size: 36px;
+   color: #ffffff!important;
+  }
+}
+
+.tdm_sponser_footerr_wrap {
+  padding-top: 20px;
+  padding-bottom: 175px;
+  background-color: $sponsored-by-footer-bkg;
+}

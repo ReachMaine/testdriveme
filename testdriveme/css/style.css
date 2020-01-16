@@ -21,6 +21,37 @@
       content: url("images/reach-favicon.png");
       padding-right: 4px; }
 
+/* styling for blog posts, single blog module, etc.... */
+/* blog module + read more button */
+.et_pb_blog_grid article.et_pb_post .post-content .more-link {
+  background-color: #b90020;
+  display: inline-block !important;
+  color: #fff !important;
+  padding: 5px 15px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  border: 1px solid #b90020;
+  font-weight: bold; }
+.et_pb_blog_grid article.et_pb_post .post-content .more-link:hover {
+  background-color: #fff;
+  color: #b90020; }
+
+body.single-post #main-content > .container {
+  padding-top: 0px; }
+
+@media all and (min-width: 981px) {
+  body.single-post #main-content > .container {
+    width: 100%;
+    max-width: initial; }
+    body.single-post #main-content > .container #content-area #left-area article {
+      max-width: 920px;
+      padding-left: 5.5%;
+      padding-right: 5%; }
+    body.single-post #main-content > .container #content-area #sidebar {
+      max-width: 230px;
+      float: right;
+      text-align: right;
+      padding-top: 50px; } }
 .tdm_sponser_header_wrap {
   background-color: #b90020;
   margin-top: 10px;
@@ -33,7 +64,6 @@
     font-family: 'Public Sans',Helvetica,Arial,Lucida,sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 36px;
     color: #ffffff !important; }
 
 .tdm_sponser_footerr_wrap {
@@ -50,6 +80,11 @@
     padding-right: 4px; }
 
 /* **** media **** */
+@media all and (min-width: 981px) {
+  body.single-post #left-area {
+    padding-left: 0px; }
+  body.single-post article {
+    padding-left: 5.5%; } }
 @media all and (max-width: 980px) {
   .rmm-row-stackorder {
     display: -webkit-box;

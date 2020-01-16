@@ -1,4 +1,8 @@
 <?php
+/* mods
+14jan2020 zig - move action et_after_post outside of article tag for styling purposes...
+  and that's probably where it SHOULD be compared to where the et_before_post is.  but probably just me. 
+*/
 
 get_header();
 
@@ -29,7 +33,6 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 	<div class="container">
 		<div id="content-area" class="clearfix">
 			<div id="left-area">
-					<?php echo do_shortcode('[et_pb_section global_module="265"][/et_pb_section]'); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php
 				/**
@@ -151,7 +154,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 					 *
 					 * @since 3.18.8
 					 */
-					do_action( 'et_after_post' );
+
 
 						if ( ( comments_open() || get_comments_number() ) && 'on' === et_get_option( 'divi_show_postcomments', 'on' ) ) {
 							comments_template( '', true );
@@ -159,7 +162,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 					?>
 					</div> <!-- .et_post_meta_wrapper -->
 				</article> <!-- .et_pb_post -->
-
+					<?php do_action( 'et_after_post' ); ?>
 			<?php endwhile; ?>
 			</div> <!-- #left-area -->
 

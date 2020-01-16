@@ -12,30 +12,11 @@
 
 @import "partials/colors";
 @import "partials/basics";
+@import "partials/blog";
 
-//blog post
-.tdm_sponser_header_wrap {
-  background-color: $sponsored-by-header-bkg;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
- .tdm_sponsor {
-   width: 80%;
-   margin: auto;
-   font-family: 'Public Sans',Helvetica,Arial,Lucida,sans-serif;
-   font-weight: 700;
-   text-transform: uppercase;
-   font-size: 36px;
-   color: #ffffff!important;
-  }
-}
 
-.tdm_sponser_footerr_wrap {
-  padding-top: 20px;
-  padding-bottom: 175px;
-  background-color: $sponsored-by-footer-bkg;
-}
+
+
 
 #footer-bottom {
   #footer-info {
