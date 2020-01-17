@@ -1,6 +1,16 @@
 /* basic css stuff */
 
-
+#sidebar {
+  .widget_nav_menu {
+    ul.menu {
+      li.current-menu-item a {
+        color: white;
+        background-color: $tdm-red;
+        padding: 5px 8px;
+      }
+    }
+  }
+}
 
 #footer-bottom {
   #footer-info {

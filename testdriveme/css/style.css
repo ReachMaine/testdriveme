@@ -11,6 +11,11 @@
 /* ----------- Colors ---------------------------------- */
 /* ----------- end Colors ----------- */
 /* basic css stuff */
+#sidebar .widget_nav_menu ul.menu li.current-menu-item a {
+  color: white;
+  background-color: #b90020;
+  padding: 5px 8px; }
+
 #footer-bottom #footer-info {
   width: 100%; }
   #footer-bottom #footer-info .reach-customer-copyright {
