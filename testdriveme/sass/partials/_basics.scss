@@ -1,11 +1,17 @@
 /* basic css stuff */
 
 #sidebar {
+  .widgettitle {
+    color: white;
+    font-weight: bold;
+  }
   .widget_nav_menu {
     ul.menu {
-      li.current-menu-item a {
+      li a {
         color: white;
-        background-color: $tdm-red;
+      }
+      li.current-menu-item a {
+        border: 1px solid white;
         padding: 5px 8px;
       }
     }

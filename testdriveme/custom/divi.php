@@ -25,7 +25,7 @@ if ( ! function_exists( 'et_get_footer_credits' ) ) {
 add_action('et_before_post', 'reach_blog_top');
 function reach_blog_top() {
   echo do_shortcode('[et_pb_section global_module="265"][/et_pb_section]'); // the hero image...
-  echo '<div class="tdm_sponser_header_wrap"><h1 class="et_pb_module_header tdm_sponsor">This vehicle sponsored by: ';
+  echo '<div class="tdm_sponser_header_wrap"><h1 class="et_pb_module_header tdm_sponsor">This review sponsored by: ';
     //the_category(" ");
   echo rmm_primary_cat(false);
   echo '</h1></div>';

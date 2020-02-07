@@ -11,9 +11,13 @@
 /* ----------- Colors ---------------------------------- */
 /* ----------- end Colors ----------- */
 /* basic css stuff */
-#sidebar .widget_nav_menu ul.menu li.current-menu-item a {
+#sidebar .widgettitle {
   color: white;
-  background-color: #b90020;
+  font-weight: bold; }
+#sidebar .widget_nav_menu ul.menu li a {
+  color: white; }
+#sidebar .widget_nav_menu ul.menu li.current-menu-item a {
+  border: 1px solid white;
   padding: 5px 8px; }
 
 #footer-bottom #footer-info {
@@ -28,6 +32,10 @@
 
 /* styling for blog posts, single blog module, etc.... */
 /* blog module + read more button */
+.et_pb_blog_grid article.et_pb_post .et_pb_image_container {
+  margin-left: -19px;
+  margin-right: -19px;
+  margin-top: -19px; }
 .et_pb_blog_grid article.et_pb_post .post-content .more-link {
   background-color: #b90020;
   display: inline-block !important;
@@ -45,13 +53,16 @@ body.single-post #main-content > .container {
   padding-top: 0px; }
 
 @media all and (min-width: 981px) {
+  body.archive #main-content > .container,
   body.single-post #main-content > .container {
     width: 100%;
     max-width: initial; }
+    body.archive #main-content > .container #content-area #left-area article,
     body.single-post #main-content > .container #content-area #left-area article {
       max-width: 920px;
-      padding-left: 5.5%;
-      padding-right: 5%; }
+      /* padding-left: 5.5%;
+      padding-right: 5%; */ }
+    body.archive #main-content > .container #content-area #sidebar,
     body.single-post #main-content > .container #content-area #sidebar {
       max-width: 230px;
       float: right;
@@ -59,7 +70,6 @@ body.single-post #main-content > .container {
       padding-top: 50px; } }
 .tdm_sponser_header_wrap {
   background-color: #b90020;
-  margin-top: 10px;
   margin-bottom: 10px;
   padding-top: 20px;
   padding-bottom: 20px; }
@@ -75,6 +85,23 @@ body.single-post #main-content > .container {
   padding-top: 20px;
   padding-bottom: 175px;
   background-color: #f7f7f7; }
+
+.tdm-site-title {
+  padding-right: 15px;
+  border-right: 2px solid #a0a0a0; }
+
+.tdm-byline {
+  color: #b90020;
+  padding-left: 15px;
+  font-size: .75em;
+  font-weight: normal;
+  letter-spacing: normal; }
+
+#content-area {
+  background-color: #b90020; }
+  #content-area #left-area {
+    background-color: white;
+    padding-bottom: 0px; }
 
 #footer-bottom #footer-info .reach-customer-copyright {
   float: left; }

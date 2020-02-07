@@ -14,8 +14,26 @@
 @import "partials/basics";
 @import "partials/blog";
 
+// header
+.tdm-site-title {
+  padding-right: 15px;
+  border-right: 2px solid #a0a0a0;
+}
+.tdm-byline {
+  color: $tdm-red;
+  padding-left: 15px;
+  font-size: .75em;
+  font-weight: normal;
+  letter-spacing: normal;
+}
 
-
+#content-area { // make side bar red whole lenght of page.
+  background-color: $tdm-red;
+  #left-area {
+    background-color: white;
+    padding-bottom: 0px;
+  }
+}
 
 
 #footer-bottom {

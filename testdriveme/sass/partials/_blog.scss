@@ -2,6 +2,11 @@
 /* blog module + read more button */
 .et_pb_blog_grid {
   article.et_pb_post {
+      .et_pb_image_container { // scooching it in a bit s.t. border shows.
+        margin-left: -19px;
+        margin-right: -19px;
+        margin-top: -19px;
+      }
       .post-content {
         .more-link {
             background-color: $tdm-red;
@@ -28,8 +33,10 @@ body.single-post {
       padding-top: 0px;
   }
 }
-// single blog at desktop
+// single blog & archive at desktop
+
 @media all and (min-width: 981px) {
+  body.archive,
   body.single-post {
     #main-content>.container {
         width: 100%;
@@ -38,9 +45,9 @@ body.single-post {
         #content-area {
           #left-area {
             article {
-              max-width: 920px;
-              padding-left: 5.5%;
-              padding-right: 5%;
+               max-width: 920px;
+              /* padding-left: 5.5%;
+              padding-right: 5%; */
             }
           }
           #sidebar {
@@ -57,7 +64,6 @@ body.single-post {
 //blog post
 .tdm_sponser_header_wrap {
   background-color: $sponsored-by-header-bkg;
-  margin-top: 10px;
   margin-bottom: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
