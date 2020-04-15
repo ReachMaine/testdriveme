@@ -1,5 +1,44 @@
 /* basic css stuff */
+// classes defined by us/
+// align ment right... ex: sidebar of posts.
+.et_pb_module.et_pb_menu.ttm-menu-align-right {
+  .et_pb_menu__menu {
+    //width: 100%;
+    nav.et-menu-nav {
+      //width: 100%;
+      ul.et-menu {
+        //width: 100%;
+        flex-direction: column;
+        li {
+          //width: 100%;
+          a {
+            text-align:right;
+            width: 100%;
+          }
+        }
 
+      }
+    }
+  }
+}
+.et_pb_module.et_pb_menu.ttm-menu-active-box {
+  .et_pb_menu__menu {
+    nav.et-menu-nav {
+      ul.et-menu {
+        li.current-menu-item a {
+          border: 1px solid white;
+          padding: 5px 8px;
+        }
+
+      }
+    }
+  }
+}
+li.current-menu-item a {
+  border: 1px solid white;
+  padding: 5px 8px;
+}
+//
 #sidebar {
   .widgettitle {
     color: white;
@@ -7,6 +46,7 @@
   }
   .widget_nav_menu {
     ul.menu {
+
       li a {
         color: white;
       }

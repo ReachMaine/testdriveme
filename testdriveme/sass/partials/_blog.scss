@@ -2,10 +2,17 @@
 /* blog module + read more button */
 .et_pb_blog_grid {
   article.et_pb_post {
+    position: relative;
       .et_pb_image_container { // scooching it in a bit s.t. border shows.
-        margin-left: -19px;
-        margin-right: -19px;
-        margin-top: -19px;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-top: -20px;
+      }
+      .post-meta {
+        position: absolute;
+        top: -24px;
+        left: 0px;
+        width: 100%;
       }
       .post-content {
         .more-link {
@@ -24,9 +31,9 @@
             color: $tdm-red;
         }
     }
-
   }
 }
+
 // single blog - all media
 body.single-post {
   #main-content>.container {
