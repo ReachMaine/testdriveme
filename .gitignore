@@ -50,3 +50,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 *.scssc
+.htaccess
+.htaccess.bv.1117
+wp-config.php
