@@ -18,6 +18,8 @@
 .tdm-site-title {
   padding-right: 15px;
   border-right: 2px solid #a0a0a0;
+  width: auto;
+  float: left;
 }
 .tdm-byline {
   color: $tdm-red;
@@ -25,6 +27,8 @@
   font-size: .75em;
   font-weight: normal;
   letter-spacing: normal;
+  width: auto;
+  float: left;
 }
 
 #content-area { // make side bar red whole lenght of page.

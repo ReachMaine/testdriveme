@@ -12,8 +12,8 @@
         li {
           //width: 100%;
           a {
-            text-align:right;
-            width: 100%;
+            //text-align:right;
+            //width: 100%;
           }
         }
 
@@ -21,6 +21,7 @@
     }
   }
 }
+// make active link a box.
 .et_pb_module.et_pb_menu.ttm-menu-active-box {
   .et_pb_menu__menu {
     nav.et-menu-nav {
@@ -34,9 +35,29 @@
     }
   }
 }
-li.current-menu-item a {
-  border: 1px solid white;
-  padding: 5px 8px;
+.et_pb_module.et_pb_posts.tdm-blog-tight {
+  article {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+}
+/*show hamburger menu on desktop for specific menu module*/
+
+@media (min-width: 980px) {
+  .tdm-hamburger-menu .et_pb_menu__menu {
+      display: none;
+  }
+
+  .tdm-hamburger-menu .et_mobile_nav_menu {
+      display: flex;
+      float: none;
+      margin: 0 6px;
+      align-items: center;
+      ul.et_mobile_menu {
+        list-style: none;
+        padding-left: 0px;
+      }
+  }
 }
 //
 #sidebar {

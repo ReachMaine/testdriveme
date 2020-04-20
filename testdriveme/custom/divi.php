@@ -22,21 +22,39 @@ if ( ! function_exists( 'et_get_footer_credits' ) ) {
   }
 }
 /// blog functions
-add_action('et_before_post', 'reach_blog_top');
+//add_action('et_before_post', 'reach_blog_top');
 function reach_blog_top() {
-  echo do_shortcode('[et_pb_section global_module="265"][/et_pb_section]'); // the hero image...
+  /* echo do_shortcode('[et_pb_section global_module="265"][/et_pb_section]'); // the hero image...
   echo '<div class="tdm_sponser_header_wrap"><h1 class="et_pb_module_header tdm_sponsor">This review sponsored by: ';
     //the_category(" ");
   echo rmm_primary_cat(false);
-  echo '</h1></div>';
+  echo '</h1></div>'; */
+  echo do_shortcode('[et_pb_section global_module="265"][/et_pb_section]'); // the hero image...
+  echo '<div class="tdm_sponser_header_wrap">' ;
+    echo ' <h1 class="et_pb_module_header tdm_sponsor">';
+      if (has_tag("sponsored", get_the_id())) {
+        $primary_cat_id = rmm_get_primary_cat();
+        echo 'This review sponsored by: ';
+        $term = get_term( $primary_cat_id);
+        echo $term->name;
+      } else { // not sponsored.
+        echo 'Vehicle review by: Tim Plouff';
+      }
+    echo '</h1>';
+  echo ' </div>';
+
 }
 
 
-add_action('et_after_post', 'reach_blog_footer');
+//add_action('et_after_post', 'reach_blog_footer');
 function reach_blog_footer () {
-  echo do_shortcode('[et_pb_section global_module="295"][/et_pb_section]');
-  echo '<div class="tdm_sponser_footerr_wrap"><div class="tdm_sponsor_desc">';
-  $catID = get_the_category();
-  echo category_description( $catID[0] );
-  echo '</div></div>';
+  if (has_tag("sponsored", get_the_id())) {
+    echo do_shortcode('[et_pb_section global_module="295"][/et_pb_section]');
+    echo '<div class="tdm_sponser_footerr_wrap"><div class="tdm_sponsor_desc">';
+    $catID = rmm_get_primary_cat();
+    echo category_description( $catID );
+    echo '</div></div>';
+  } else {
+      echo do_shortcode('[et_pb_section global_module="806"][/et_pb_section]');
+  }
 }

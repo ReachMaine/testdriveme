@@ -2,6 +2,29 @@
   custom reach functions
 */
 
+function rmm_get_primary_cat() {
+  // retunr the primary category  ID if there is one, otherwise the first category ID.
+    $primary_cat_id = 0;
+    $categorys = get_the_category();
+    //echo "<pre>"; var_dump($categorys); echo "</pre>";
+    if ($categorys){
+      // Show the post's 'Primary' category, if this Yoast feature is available, & one is set
+      $wpseo_primary_term = new WPSEO_Primary_Term( 'category', get_the_id() );
+      $wpseo_primary_term = $wpseo_primary_term->get_primary_term();
+      $term = get_term( $wpseo_primary_term );
+      if (is_wp_error($term)) {
+        // Default to first category (not Yoast) if an error is returned
+        $primary_cat_id = $categorys[0]->term_id;
+      } else {
+        $primary_cat_id = $term->term_id;
+      }
+    }
+    else {
+      $primary_cat_id = $categorys[0]->term_id;
+    }
+    return $primary_cat_id;
+}
+
 
 function rmm_primary_cat($useCatLink = true) {
   // SHOW YOAST PRIMARY CATEGORY, OR FIRST CATEGORY

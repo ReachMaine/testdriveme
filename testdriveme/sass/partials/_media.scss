@@ -1,7 +1,7 @@
 /* **** media **** */
 // Divi breakpts
 // mobile menu shows at max-width:
-@media all and (min-width: 981px) {
+@media all and (min-width: 981px) { // desktop
   body.single-post {
     #left-area {
       padding-left: 0px;
@@ -9,6 +9,9 @@
     article {
       padding-left: 5.5%;
     }
+  }
+  .et_pb_gutters2 .et_pb_column.rmm-cust-col0 {
+    margin-right: 0px!important;
   }
 }
 @media all and (max-width: 980px) { // nav menu,  woo & footer widgtes
