@@ -13,8 +13,24 @@
   .et_pb_gutters2 .et_pb_column.rmm-cust-col0 {
     margin-right: 0px!important;
   }
+  .tdm-site-title {
+    padding-right: 15px;
+    border-right: 2px solid #a0a0a0;
+    width: auto;
+    float: left;
+  }
+  .tdm-byline {
+    width: auto;
+    float: left;
+  }
 }
 @media all and (max-width: 980px) { // nav menu,  woo & footer widgtes
+  // header
+  .tdm-site-title,
+  .tdm-byline {
+    width: auto;
+    text-align: center;
+  }
   .rmm-row-stackorder {
 		display: -webkit-box;
 		display: -moz-box;

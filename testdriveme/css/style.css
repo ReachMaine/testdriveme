@@ -117,20 +117,12 @@ body.single-post #main-content > .container {
   padding-bottom: 175px;
   background-color: #f7f7f7; }
 
-.tdm-site-title {
-  padding-right: 15px;
-  border-right: 2px solid #a0a0a0;
-  width: auto;
-  float: left; }
-
 .tdm-byline {
   color: #b90020;
   padding-left: 15px;
   font-size: .75em;
   font-weight: normal;
-  letter-spacing: normal;
-  width: auto;
-  float: left; }
+  letter-spacing: normal; }
 
 #content-area {
   background-color: #b90020; }
@@ -154,8 +146,23 @@ body.single-post #main-content > .container {
     padding-left: 5.5%; }
 
   .et_pb_gutters2 .et_pb_column.rmm-cust-col0 {
-    margin-right: 0px !important; } }
+    margin-right: 0px !important; }
+
+  .tdm-site-title {
+    padding-right: 15px;
+    border-right: 2px solid #a0a0a0;
+    width: auto;
+    float: left; }
+
+  .tdm-byline {
+    width: auto;
+    float: left; } }
 @media all and (max-width: 980px) {
+  .tdm-site-title,
+  .tdm-byline {
+    width: auto;
+    text-align: center; }
+
   .rmm-row-stackorder {
     display: -webkit-box;
     display: -moz-box;
