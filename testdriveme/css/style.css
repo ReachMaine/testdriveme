@@ -11,6 +11,9 @@
 /* ----------- Colors ---------------------------------- */
 /* ----------- end Colors ----------- */
 /* basic css stuff */
+.mfp-wrap .mfp-container .mfp-content .mfp-figure figcaption .mfp-title {
+  display: none; }
+
 .et_pb_module.et_pb_menu.ttm-menu-align-right .et_pb_menu__menu nav.et-menu-nav ul.et-menu {
   flex-direction: column; }
 
@@ -81,6 +84,9 @@
   .et_pb_blog_grid article.et_pb_post .post-content .more-link:hover {
     background-color: #fff;
     color: #b90020; }
+.et_pb_blog_grid .pagination a {
+  border: 2px solid #b90020;
+  padding: 10px 16px; }
 
 body.single-post #main-content > .container {
   padding-top: 0px; }

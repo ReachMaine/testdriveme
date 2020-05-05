@@ -1,5 +1,19 @@
 /* basic css stuff */
 // classes defined by us/
+// galleries hide title
+.mfp-wrap {
+  .mfp-container {
+    .mfp-content {
+      .mfp-figure {
+        figcaption {
+          .mfp-title {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
 // align ment right... ex: sidebar of posts.
 .et_pb_module.et_pb_menu.ttm-menu-align-right {
   .et_pb_menu__menu {

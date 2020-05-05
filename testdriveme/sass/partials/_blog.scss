@@ -35,6 +35,10 @@
         }
     }
   }
+  .pagination a {
+    border: 2px solid $tdm-red;
+    padding: 10px 16px;
+  }
 }
 
 // single blog - all media

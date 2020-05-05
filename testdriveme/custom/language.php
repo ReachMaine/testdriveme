@@ -15,16 +15,20 @@
 				            	break;
 				        }
 						break; */
-						case 'oshin': {
+						case 'Divi': {
 							switch ( $translated_text ) {
-									 case 'Category: ' : // remove Category: from front of blog archives.
-											 $translated_text =  '';
-											 break;
+								   case '&laquo; Older Entries':
+                      $translated_text = '&laquo; Older Reviews';
+                      break;
+                    case 'Next Entries &raquo;':
+                      $translated_text = 'Newer Reviews &raquo;';
+                      break;
+
 							 }
-						} // end ohin
+						 }
 					default:
 						/* switch ( $translated_text ) {
-				            case 'Category' :
+				          case 'Category' :
 				                $translated_text = __( '',  $domain  );
 				                break;
 				         	case 'Type here...':

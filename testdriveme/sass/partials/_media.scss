@@ -2,6 +2,10 @@
 // Divi breakpts
 // mobile menu shows at max-width:
 @media all and (min-width: 981px) { // desktop
+  // header
+  .tdm-home-button {
+    //  float: right;
+  }
   body.single-post {
     #left-area {
       padding-left: 0px;
@@ -30,6 +34,9 @@
   .tdm-byline {
     width: auto;
     text-align: center;
+  }
+  .tdm-home-button {
+
   }
   .rmm-row-stackorder {
 		display: -webkit-box;
